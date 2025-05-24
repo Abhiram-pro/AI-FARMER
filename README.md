@@ -16,14 +16,14 @@ This project is a part of the **Soil Image Classification Challenge - 2025**. Th
 - Fine-tuned only the last block (`layer4`) and the fully connected (`fc`) layer
 - Applied standard **224x224 resizing**, normalization, and **stratified split** of the dataset
 - Trained using **CrossEntropyLoss** and **Adam optimizer**
-- Used only the **provided dataset** (no external data)
+- Used the **provided dataset** 
 - Generated predictions on internal test images and visualized results using **confusion matrix** and **classification report**
 
 ## 🔍 Dataset
 
 - `train_labels.csv`: Contains image IDs and soil types
 - `test_ids.csv`: Contains test image IDs for prediction
-- Image folders: `train/` and `test/`
+- Image folders: `train/` and `test/`s
 
 ## 🧠 Model Summary
 
