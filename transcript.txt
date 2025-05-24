@@ -16,4 +16,4 @@ How did you overcome the challenge?
 We addressed class imbalance using stratified splitting to ensure fair representation across training and validation. To reduce overfitting, we limited the number of trainable layers and monitored validation metrics closely. To improve performance for underrepresented classes, we fine-tuned the model using careful augmentation and normalization strategies.
 
 Final Observation and Leaderboard Score  
-Our model achieved a strong weighted F1-score of **0.9655** on the validation set. It performed particularly well on Black Soil and Red Soil classes. Our leaderboard score was **0.9655**, and we achieved a **rank of 82**.
+Our model achieved a strong weighted F1-score of **0.98370** on the validation set. It performed particularly well on Black Soil and Red Soil classes. Our leaderboard score was **0.9655**, and we achieved a **rank of 82**.
