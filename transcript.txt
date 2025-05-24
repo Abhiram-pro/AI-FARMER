@@ -1,0 +1,19 @@
+Team Name  
+AI Farmer
+
+Team Members Name  
+Anish Raj, Utkarsh Umang, Abhiram Ganji
+
+Approach of solving the problem  
+We built a soil image classification model using the internal soil_classification-2025 dataset. Our pipeline included stratified splitting, label encoding, and image transformation. We used a fine-tuned pretrained ResNet50 model, freezing all layers except layer4 and the fully connected layer. The input images were resized to 224x224 and normalized using ImageNet statistics. We trained the model for 5 epochs using CrossEntropyLoss and the Adam optimizer. Validation performance was evaluated using metrics like F1 score and a confusion matrix. The final predictions on the internal test set were formatted into a CSV file for submission.
+
+Challenges Faced  
+- Dealing with imbalanced data distribution across soil types.  
+- Overfitting during early experiments with fewer training samples.  
+- Achieving higher recall for underrepresented classes like Alluvial Soil.
+
+How did you overcome the challenge?  
+We addressed class imbalance using stratified splitting to ensure fair representation across training and validation. To reduce overfitting, we limited the number of trainable layers and monitored validation metrics closely. To improve performance for underrepresented classes, we fine-tuned the model using careful augmentation and normalization strategies.
+
+Final Observation and Leaderboard Score  
+Our model achieved a strong weighted F1-score of **0.9655** on the validation set. It performed particularly well on Black Soil and Red Soil classes. Our leaderboard score was **0.9655**, and we achieved a **rank of 82**.
